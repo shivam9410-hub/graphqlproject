@@ -74,14 +74,6 @@ const projects = [
       email: 'bruce@gmail.com',
       phone: '321-468-8887',
     },
-    {
-      id: '6',
-      clientId: '7',
-      name: 'Zomato App',
-      description:
-        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.',
-      status: 'In Progress',
-    },
   ];
   
   module.exports = { projects, clients };
