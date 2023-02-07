@@ -17,18 +17,24 @@ const ClientType= new GraphQLObjectType({
             phone:{type:GraphQLString},
         }
     )
-});
 
-const ProjectType= new GraphQLObjectType({
+}
 
+)
+;
+
+const ProjectType= new GraphQLObjectType(
+    {
+    
     name:'Project',
+    
     fields:()=>(
         {
             id:{type:GraphQLID},
             name:{type:GraphQLString},
            description:{type:GraphQLString},
            status:{type:GraphQLString}
-,           client :{
+,           client:{
             type:ClientType,
             resolve(parent,args){
                // return clients.find(client =>client.id===parent.clientId)
@@ -126,7 +132,8 @@ const mutation=new GraphQLObjectType({
             clientId:{type:GraphQLNonNull(GraphQLID)},
             
             },
-            resolve(parent, args){
+            resolve(parent, args)
+            {
                 const project =new Project({
                     name:args.name,
                     description:args.description,
